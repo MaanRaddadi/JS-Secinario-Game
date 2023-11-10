@@ -1,20 +1,100 @@
+* {
+  --background: #111827;
+}
 body {
-  display: flex;
-  justify-content: center;
+  background-color: var(--background);
+  overflow: hidden;
+  height: 100%;
+  padding: 5px;
 }
 .main-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  height: 100vh;
+  gap: 10px;
 }
-.secondary-container {
+.enviroment-contianer {
+  background-image: url(./assets/background/market.jpg);
+  background-position: center;
+  background-size: cover;
+
+  width: 50%;
+  height: 100%;
+  position: relative;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.editor-container {
+  width: 50%;
+  height: 50%;
+}
+#run {
+  border: none;
+  background-color: rgb(25, 116, 25);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-family: "Tajawal", sans-serif;
+  font-size: 1rem;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-top: 10px;
+  border-bottom: 5px solid rgb(18, 79, 18);
+
+  cursor: pointer;
+}
+.character-main {
+  width: 10%;
+  object-fit: contain;
+}
+#man {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+}
+#woman {
+  position: absolute;
+  bottom: 3%;
+  right: 20%;
+  transform: scaleX(-1);
+  width: 9%;
+}
+#kid {
+  position: absolute;
+  width: 15%;
+  top: 15%;
+  left: 0%;
+}
+.dialog-box {
+  background-image: url(./assets/dialog/dialog_box1.png);
+  width: 40%;
+  height: 20%;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 25%;
+  right: 25%;
+  opacity: 0.95;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50vh;
-  background-color: gray;
-  padding: 40px;
+  padding: 10px;
+}
+#dialog-text {
+  direction: rtl;
+  font-weight: 800;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-right: 5px;
+  font-family: "Tajawal", sans-serif;
+  font-size: 0.9rem;
+  margin: 0;
+}
+.question {
+  direction: rtl;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 600;
+  color: white;
 }

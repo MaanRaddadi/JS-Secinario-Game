@@ -1,17 +1,24 @@
-const sec = document.querySelector(".secondary-container");
-const names = ["Maan", "Hatem", "AlRaddadi", "Mohammed"];
-document.getElementById("execute").addEventListener("click", () => {
-  getUserAnswer();
-  checkAnswer();
+var myCodeMirror = CodeMirror.fromTextArea(document.getElementById("editor"), {
+  mode: "javascript",
+  theme: "dracula",
+  lineNumbers: true,
 });
-const textArea = document.getElementById("userCode");
-textArea.value = "//Given This array const names ${names} ";
-function getUserAnswer() {
-  eval(textArea.value);
-}
-//lost kid in crowed
-function checkAnswer() {
-  if (!names.includes("Maan")) {
-    console.log("Win");
-  }
+let questionText = document.querySelector(".question");
+let runBtn = document.getElementById("run");
+
+myCodeMirror.setValue(`function findFaisal(){ 
+  const store = ["Khaled","Nora","Mohammed","Faisal","Sarah"];
+   //type your code here 
+  
+  }`);
+questionText.textContent = "اكتب دالة تستخرج قيمة 'Faisal'  وترجعه لأهله";
+
+runBtn.addEventListener("click", () => {
+  const userCode = myCodeMirror.getValue();
+  const userResult = eval(`(${userCode})()`);
+  checkAnswer(result);
+});
+
+function checkAnswer(result) {
+ 
 }
