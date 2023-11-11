@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <title>JS Secenarios</title>
-    <script src="./codemirror-5.65.15/lib/codemirror.js"></script>
-    <link rel="stylesheet" href="./codemirror-5.65.15/lib/codemirror.css" />
-    <script src="./codemirror-5.65.15/mode/javascript/javascript.js"></script>
-    <link rel="stylesheet" href="./codemirror-5.65.15/theme/dracula.css" />
+    <script src="../codemirror-5.65.15/lib/codemirror.js"></script>
+    <link rel="stylesheet" href="../codemirror-5.65.15/lib/codemirror.css" />
+    <script src="../codemirror-5.65.15/mode/javascript/javascript.js"></script>
+    <link rel="stylesheet" href="../codemirror-5.65.15/theme/dracula.css" />
     <link href="https://fonts.cdnfonts.com/css/common-pixel" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,55 +19,17 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/secenarioTwo.css" />
   </head>
   <body>
     <div class="main-container">
-      <div class="enviroment-contianer">
-        <img src="./assets/character/man.png" class="character-main" id="man" />
-        <img
-          src="./assets/character/woman.png"
-          class="character-main"
-          id="woman"
-        />
-        <img src="./assets/character/kid.png" class="character-main" id="kid" />
-        <div class="dialog-box">
-          <p id="dialog-text">
-            فيصل ضايع !!! دورناه في البقالة كلها وما لقيناه. تقدر تساعدنا ؟
-          </p>
-        </div>
-      </div>
-      <!--First Enviroment End-->
-      <!--Stores Enviroment Start-->
-      <div class="stores-enviroment">
-        <img
-          src="./assets/character/woman.png"
-          class="character-main"
-          id="woman"
-        />
-        <img
-          src="./assets/character/man.png"
-          class="character-main"
-          id="man-stores"
-        />
-        <div class="dialog-box">
-          <p id="dialog-text-second">
-            المحلات كثيرة واحتاج اعرف المحلات المناسبة لميزانيتي 1000 ر.س بدون
-            ما اضيع وقت. تقدر تساعدني؟
-          </p>
-        </div>
-        <div class="dialog-box-fade-in fadeIn">
-          <p id="dialog-text-second-man">Store A Store D Store E</p>
-        </div>
-      </div>
-      <!--Stores Enviroment End-->
+      <div class="enviroment-contianer stores-enviroment"></div>
       <div class="editor-container">
         <p class="question"></p>
         <textarea id="editor"></textarea>
         <button id="run">جرب ></button>
       </div>
     </div>
-
     <div
       class="modal fade"
       id="exampleModal"
@@ -135,10 +97,11 @@
             >
               إغلاق
             </button>
-
-            <button type="button" class="btn btn-main modal-btn-next">
-              التالي
-            </button>
+            <a href="./pages/secenarioTwo.html">
+              <button type="button" class="btn btn-main modal-btn-next">
+                التالي
+              </button>
+            </a>
           </div>
         </div>
       </div>
@@ -184,5 +147,5 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"
   ></script>
-  <script src="script.js"></script>
+  <script src="/script.js"></script>
 </html>

@@ -1,0 +1,8 @@
+@import url(../style.css);
+.stores-enviroment {
+  background-image: url(../assets/background/stores.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+}

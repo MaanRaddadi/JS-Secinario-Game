@@ -20,14 +20,18 @@ body {
   background-position: center;
   background-size: cover;
   width: 50%;
-  height: 100%;
+  height: 95%;
   position: relative;
-  margin-top: 10px;
+
   border-radius: 10px;
 }
 .editor-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
   width: 50%;
-  height: 50%;
+  height: 100%;
 }
 #run {
   border: none;
@@ -149,4 +153,101 @@ body {
   background-color: rgb(25, 116, 25) !important;
   font-weight: 800;
   border-bottom: 5px solid rgb(18, 79, 18);
+}
+.stores-enviroment {
+  background-image: url(../assets/background/stores.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  border-radius: 15px;
+  width: 50%;
+  height: 95%;
+  display: none;
+}
+#dialog-text-second {
+  text-align: right;
+  font-size: 0.8rem;
+  font-weight: 800;
+  font-family: "Tajawal", sans-serif;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-right: 5px;
+}
+.fadeOut {
+  animation-name: fadeOut;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#man-stores {
+  position: absolute;
+  left: -10%;
+  bottom: -1%;
+  transform: scaleX(-1);
+}
+
+.SecondAnswerAnimation {
+  animation-name: manAnimation;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+@keyframes manAnimation {
+  10% {
+    left: 0%;
+  }
+  100% {
+    left: 50%;
+  }
+}
+.dialog-box-fade-in {
+  background-image: url(./assets/dialog/dialog_box1.png);
+  width: 40%;
+  height: 20%;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 25%;
+  right: 5%;
+  transform: scaleX(-1);
+  opacity: 0.95;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  display: none;
+}
+#dialog-text-second-man {
+  transform: scaleX(-1);
+  font-weight: 800;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-right: 5px;
+  font-family: "Tajawal", sans-serif;
+  font-size: 0.9rem;
+  margin: 0;
+}
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
