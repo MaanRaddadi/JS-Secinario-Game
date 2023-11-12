@@ -62,27 +62,27 @@ const questions = [
         {
           name: "Store A",
           location: "First-Floor",
-          prices: "1000",
+          prices: 1000,
         },
         {
           name: "Store B",
           location: "Second-Floor",
-          prices: "2500",
+          prices: 2500,
         },
         {
           name: "Store C",
           location: "Ground-Fall",
-          prices: "5500",
+          prices: 5500,
         },
         {
           name: "Store D",
           location: "First-Floor",
-          prices: "900",
+          prices: 900,
         },
         {
           name: "Store E",
           location: "Third-Floor",
-          prices: "800",
+          prices: 800,
         },
       ];
       //type your code here 
