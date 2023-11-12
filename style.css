@@ -154,7 +154,7 @@ body {
   border-bottom: 5px solid rgb(18, 79, 18);
 }
 .stores-enviroment {
-  background-image: url(../assets/background/stores.png);
+  background-image: url(./assets/background/stores.png);
   background-position: center;
   background-size: cover;
   position: relative;
