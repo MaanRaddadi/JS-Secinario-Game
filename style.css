@@ -22,7 +22,6 @@ body {
   width: 50%;
   height: 95%;
   position: relative;
-
   border-radius: 10px;
 }
 .editor-container {
@@ -241,7 +240,6 @@ body {
   animation-duration: 2s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
-  
 }
 @keyframes fadeIn {
   0% {
@@ -249,5 +247,132 @@ body {
   }
   100% {
     opacity: 1;
+  }
+}
+.room-enviroment {
+  background-image: url(./assets/background/room.gif);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  border-radius: 15px;
+  width: 50%;
+  height: 95%;
+  display: none;
+}
+
+#ahmed {
+  width: 20%;
+  transform: scaleX(-1);
+  position: absolute;
+  left: -2%;
+  bottom: 0;
+}
+.dialog-room {
+  position: absolute;
+  transform: scaleX(-1);
+  left: 12%;
+  bottom: 40%;
+  height: 26%;
+  width: 50%;
+}
+#dialog-text-third {
+  transform: scaleX(-1);
+  text-align: right;
+  font-size: 0.8rem;
+  font-weight: 800;
+  font-family: "Tajawal", sans-serif;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-right: 5px;
+}
+
+.second-room-enviroment {
+  background-image: url(./assets/background/room.gif);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  border-radius: 15px;
+  width: 50%;
+  height: 95%;
+  display: none;
+}
+#ahmedSecond {
+  position: absolute;
+  bottom: -7%;
+  right: 30%;
+  width: 20%;
+}
+
+.second-dialog-room {
+  position: absolute;
+  bottom: 40%;
+  right: 45%;
+}
+#dialog-text-fourth {
+  text-align: right;
+  font-size: 0.8rem;
+  font-weight: 800;
+  font-family: "Tajawal", sans-serif;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-right: 5px;
+}
+.book {
+  width: 10%;
+  position: absolute;
+}
+#book1 {
+  bottom: 0%;
+  left: 10%;
+
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+#book2 {
+  bottom: 0%;
+  left: 13%;
+
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+#book3 {
+  bottom: 0%;
+  left: 15%;
+
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes booksAnimation1 {
+  0% {
+    bottom: 0%;
+    left: 10%;
+  }
+  100% {
+    bottom: 6%;
+    left: 25%;
+  }
+}
+@keyframes booksAnimation2 {
+  0% {
+    bottom: 0%;
+    left: 13%;
+  }
+  100% {
+    bottom: 5%;
+    left: 25%;
+  }
+}
+@keyframes booksAnimation3 {
+  0% {
+    bottom: 0%;
+    left: 13%;
+  }
+  100% {
+    bottom: 4%;
+    left: 25%;
   }
 }
